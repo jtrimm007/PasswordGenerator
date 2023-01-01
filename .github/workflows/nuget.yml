@@ -25,7 +25,7 @@ jobs:
           dotnet-version: "3.1.x"
 
       - name: "Restore packages"
-         run: echo " $PROJECT_PATH " 
+         run: print " $PROJECT_PATH " 
         # run: dotnet restore ${{ env.PROJECT_PATH }}
 
       # - name: "Build project"
