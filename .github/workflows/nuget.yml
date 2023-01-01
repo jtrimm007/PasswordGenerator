@@ -7,7 +7,7 @@ on:
   #     - "v*"
 
 env:
-  PROJECT_PATH: "PasswordGenerator.csproj"
+  PROJECT_PATH: "./PasswordGenerator.csproj"
   PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}\output
   NUGET_SOURCE_URL: "https://nuget.pkg.github.com/jtrimm007/index.json"
 
@@ -25,7 +25,7 @@ jobs:
           dotnet-version: "3.1.x"
 
       - name: "Restore packages"
-        working-directory: PasswordGenerator
+        #working-directory: PasswordGenerator
         run: dotnet restore ${{ env.PROJECT_PATH }}
 
       - name: "Build project"
