@@ -26,7 +26,7 @@ jobs:
 
       - name: "Restore packages"
          run: echo "This is the dir ${{ env.PROJECT_PATH }}"
-         shell: cmd
+         shell: pwsh
         # run: dotnet restore ${{ env.PROJECT_PATH }}
 
       # - name: "Build project"
